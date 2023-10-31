@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<!-- Website - www.codingnepalweb.com -->
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <title>Official Starmaker Cansing | Starmaker</title>
+
+    <link rel="stylesheet" href="appcs.css" />
+
+    <!-- Boxicons CDN Link -->
+
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<script>
+let sidebar = document.querySelector(".sidebar");
+
+let closeBtn = document.querySelector("#btn");
+
+let searchBtn = document.querySelector(".bx-search");
+
+
+
+closeBtn.addEventListener("click", ()=>{
+
+  sidebar.classList.toggle("open");menuBtnChange();//calling the function(optional)
+
+});
+
+
+
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+
+  sidebar.classList.toggle("open");menuBtnChange(); //calling the function(optional)
+
+});
+
+
+
+// following are the code to change sidebar button(optional)
+
+function menuBtnChange() {
+
+ if(sidebar.classList.contains("open")){
+
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+
+ }else {
+
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+
+ }
+
+}
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="sidebar">
+
+      <div class="logo-details">
+
+
+        <div class="logo_name">Cansing</div>
+
+        <i class="bx bx-menu" id="btn"></i>
+
+      </div>
+
+      <ul class="nav-list">
+
+        <li>
+
+          <i class="bx bx-search"></i>
+
+          <input type="text" placeholder="Search..." />
+
+          <span class="tooltip">Search</span>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+
+            <i class="bx bx-grid-alt"></i>
+
+            <span class="links_name">Dashboard</span>
+
+          </a>
+
+          <span class="tooltip">Dashboard Home</span>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+
+            <i class="bx bx-user"></i>
+
+            <span class="links_name">User</span>
+
+          </a>
+
+          <span class="tooltip">User</span>
+
+        </li>
+
+
+        <li>
+
+          <a href="#">
+
+            <i class="bx bx-folder"></i>
+
+            <span class="links_name">File Manager</span>
+
+          </a>
+
+          <span class="tooltip">Files</span>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+
+            <i class="bx bx-cart-alt"></i>
+
+            <span class="links_name">Order</span>
+
+          </a>
+
+          <span class="tooltip">Order</span>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+
+            <i class="bx bx-heart"></i>
+
+            <span class="links_name">Saved</span>
+
+          </a>
+
+          <span class="tooltip">Saved</span>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+
+            <i class="bx bx-cog"></i>
+
+            <span class="links_name">Setting</span>
+
+          </a>
+
+          <span class="tooltip">Setting</span>
+
+        </li>
+
+        <li class="profile">
+
+          <div class="profile-details">
+
+            <img src="profile.jpg" alt="profileImg" />
+
+            <div class="name_job">
+
+              <div class="name">Starmaker senthil</div>
+
+              <div class="job">Web designer</div>
+
+            </div>
+
+          </div>
+
+          <i class="bx bx-log-out" id="log_out"></i>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <section class="home-section">
+
+      <div class="text" style="color: rgb(231, 214, 222);text-shadow: rgb(2, 82, 71) 5px 2px 3px;font-stretch:condensed;">Starmaker CanSing Development department
+        <figcaption><font size="2">&copy;All rights reserved by Cansing Developers department-2023</font></figcaption>
+      </div>
+      <hr><br>
+<fieldset title="about admin">
+    <h1 style="color: rgb(0, 248, 54);">COVER RECOMMENDATION</h1>
+    <figcaption>Starmaker cover recommendation event | Admin: Eyekiller</figcaption>
+</fieldset><br>
+<figure>
+   <dt style="color: rgb(236, 37, 11);"><em><u>DESCRIPTION</u></em></dt>
+    <li>Please read the steps first for get 100% results.</li>
+    <li>Three types of applications links are given below, you can click and checkabout that.</li>
+    <li>The application form not need your Privacy details,<br><br>
+        <figure><caption><h4 style="color: rgb(0, 248, 227);">Required datas:</h4></caption><li>Profile screenshot</li>
+        <li>SID number</li>
+        <li>Song link</li></figure>
+    </li>
+</figure>
+<br><hr>
+
+<h1 style="color: rgb(18, 1, 65);">What you need ?<br>
+    <button><a href="views.html">Views</a></button><br>
+    <button><a href="ranking.html">Ranking</a></button><br>
+    <button><a href="recommended.html">Recommended</a></button>
+</h1><br>
+<hr>
+<h2 align="center">About Cansing</h2>
+<br>
+<pre>  Welcome to CanSing website , Cansing is a group of Music and Game playing Intrested peoples,
+    Cansing groups located in George Town-MALAYSIA.
+</pre>
+<br><hr><br>
+    <h3 align="center">ADMINSTARTORS IN CANSING</h3>
+<br>
+<table>
+
+    <tr><th>C.E.O -</th><td>Eyekiller</td></tr>
+    <tr><th>Manager -</th><td>Mr.jo</td></tr>
+    <tr><th>Admins -</th><td><li>Vanu</li>
+    <li>Rafeek</li></td></tr>
+    <tr><th>Members - 
+        <li>Anees</li>
+    <li>Haridon</li>
+    <li>Nidhila</li>
+    <li>Abdul</li>
+    <li>Shiva</li>
+    <li>Sandy</li>
+    <li>Vandhana</li>
+    <li>Silver</li>
+    <li>Karthi</li>
+    <li>Rajaram</li>
+    <li>Snehan</li>
+    <li>Sakthi</li>
+    <li>Priya</li>
+    <li>Vimal</li>
+    <li>Madan</li>
+    <li>Ashok</li>
+    <li>Durga</li>
+    <li>Aishu</li>
+    <li>Siddhu</li>
+    <li>Rejina</li>
+    <li>Saravan</li>
+    <li>Agency</li>
+    <li>Teejay</li>
+    <li>Saran</li>
+    <li>arun</li>
+    <li>enthil</li>
+    <li>suren</li>
+    <li>eye83</li>
+    <li>sasidharan</li>
+    <li>ahamad</li>
+    <li>senthuz</li>
+    </th></tr>
+</table>
+<br><hr><br>
+
+
+
+
+
+
+    </section>
+  </body>
+
+</html
